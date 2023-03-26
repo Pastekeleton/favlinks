@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Table from './Table'
 // import Table from './Table';
 // import Form from './Form';
 
@@ -20,6 +21,7 @@ const LinkContainer = (props) => {
       <h1>My Favorite Links</h1>
       <p>Add a new url with a name and link to the table.</p>
       {/*TODO - Add Table Component */}
+      <Table/>
 
       <br />
 

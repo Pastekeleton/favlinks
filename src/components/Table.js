@@ -34,9 +34,22 @@ const TableBody = (props) => {
 }
 
 const Table = (props) => {
+  const arr = [
+    {
+      name: 'Youtube',
+      URL: 'youtube.com'
+    },
+    {
+      name: 'google',
+      URL: 'google.com'
+    }
+  ];
   {
     /*TODO - return <table> component, TableHeader and TableBody  and pass props!*/
-    return <table></table>
+    return (<table>
+      <TableHeader/>
+      <TableBody linkData={arr}/>
+    </table>)
   }
 }
 
