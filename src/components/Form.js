@@ -21,7 +21,10 @@ const Form = (props) => {
       <label htmlFor='URL'>URL</label><br/>
       <input type='text' name='URL' value={URL} onChange={(event)=> setURL(event.target.value)}/><br/>
       
-      <button type='submit'>Submit</button>
+      <button type='submit' style={{
+        color: 'white',backgroundColor: 'blue',
+        width: '100px',
+        height: '50px'}}>Submit</button>
     </form>
   )
 }

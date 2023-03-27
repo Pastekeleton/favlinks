@@ -21,7 +21,10 @@ const TableBody = (props) => {
           <a href={row.URL}>{row.URL}</a>
         </td>
         <td>
-          <button onClick={() => props.removeLink(index)}>Delete</button>
+          <button style={{
+        color: 'white',backgroundColor: 'blue',
+        width: '100px',
+        height: '30px'}} onClick={() => props.removeLink(index)}>Delete</button>
         </td>
       </tr>
     )
