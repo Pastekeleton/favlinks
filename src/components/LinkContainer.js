@@ -14,7 +14,7 @@ const LinkContainer = (props) => {
   const handleSubmit = (name, URL) => {
     setLinkData([...linkData, {name, URL}]);
   }
-
+  console.log(linkData);
   return (
     <div className="container">
       <h1>My Favorite Links</h1>

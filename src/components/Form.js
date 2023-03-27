@@ -1,17 +1,18 @@
 import { useState } from 'react'
 
-const Form = () => {
+const Form = (props) => {
   const [name, setName] = useState('');
   const [URL, setURL] = useState('');
 
   const onFormSubmit = (event) => {
     event.preventDefault();
+    props.handleSubmit(name, URL);
     setName('');
     setURL('');
   }
 
   return (
-    <form>
+    <form onSubmit={onFormSubmit}>
       <label htmlFor='name'>Name</label><br/>
       <input type='text' name='name' value={name} onChange={(event)=> setName(event.target.value)}/>
       
