@@ -12,7 +12,7 @@ const Form = (props) => {
   }
 
   return (
-    <form onSubmit={onFormSubmit}>
+    <form style={{color: 'lightgray'}} onSubmit={onFormSubmit}>
       <label htmlFor='name'>Name</label><br/>
       <input type='text' name='name' value={name} onChange={(event)=> setName(event.target.value)}/>
       
