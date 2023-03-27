@@ -6,7 +6,8 @@ const LinkContainer = (props) => {
   const [linkData, setLinkData] = useState([]);
 
   const handleRemove = (index) => {
-    
+    const arrCopy = linkData.filter((element, idx) => index !== idx);
+    setLinkData(arrCopy);
   }
 
   const handleSubmit = (name, URL) => {
@@ -18,7 +19,7 @@ const LinkContainer = (props) => {
     <div className="container">
       <h1>My Favorite Links</h1>
       <p>Add a new url with a name and link to the table.</p>
-      <Table linkData={linkData}/>
+      <Table linkData={linkData} removeLink={handleRemove}/>
 
       <br />
 
